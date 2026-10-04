@@ -1,0 +1,14 @@
+{
+  "name": "photography-portfolio",
+  "version": "1.0.0",
+  "description": "Three photography series published as a static site with a freeze-snapshot batch workflow.",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "start": "node server.js",
+    "serve": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
