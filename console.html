@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publish console — Quiet Frames</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="wordmark" href="/index.html">Quiet Frames<small>Publish console</small></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/index.html">Home</a>
+        <a href="/works.html">Works</a>
+        <a href="/series.html">Series</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Publishing</p>
+        <h1>Publish console</h1>
+        <p style="color:var(--ink-soft);max-width:680px">
+          Select series for a batch, freeze cover / order / captions, then publish.
+          A batch can be re-selected until it is published; afterwards the frozen
+          content stays online and is flagged for review if the source changes.
+        </p>
+        <div data-console-notices style="margin-top:20px"></div>
+
+        <div class="console-layout" style="margin-top:30px">
+          <nav class="console-nav" aria-label="Console sections">
+            <button class="active" data-panel="batch" type="button">Batch</button>
+            <button data-panel="content" type="button">Cover · order · captions</button>
+            <button data-panel="history" type="button">History &amp; storage</button>
+          </nav>
+
+          <div>
+            <div class="panel active" id="panel-batch">
+              <div id="batch-panel"></div>
+            </div>
+            <div class="panel" id="panel-content">
+              <div id="content-panel"></div>
+            </div>
+            <div class="panel" id="panel-history">
+              <div id="history-panel"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>Draft changes save to this browser automatically.</span>
+      <span><a href="/index.html">← Back to site</a></span>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/console.js"></script>
+</body>
+</html>

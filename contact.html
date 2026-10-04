@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Quiet Frames</title>
+  <meta name="description" content="Get in touch about sittings, prints and editorial work." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="wordmark" href="/index.html">Quiet Frames<small>Photography · Lin Yao</small></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/index.html" data-nav="home">Home</a>
+        <a href="/works.html" data-nav="works">Works</a>
+        <a href="/series.html" data-nav="series">Series</a>
+        <a href="/about.html" data-nav="about">About</a>
+        <a href="/contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Say hello</h1>
+        <p style="color:var(--ink-soft);max-width:560px">
+          For sittings, print orders, editorial commissions or exhibitions —
+          send a note and I usually reply within two working days.
+        </p>
+
+        <div class="form-wrap" style="margin-top:36px">
+          <form novalidate data-contact-form>
+            <div class="form-alert" data-form-alert role="status" aria-live="polite"></div>
+
+            <div class="form-field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" />
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" />
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-subject">Subject</label>
+              <select id="cf-subject" name="subject">
+                <option value="">Please choose…</option>
+                <option value="sitting">Portrait sitting</option>
+                <option value="print">Prints</option>
+                <option value="editorial">Editorial / commission</option>
+                <option value="exhibition">Exhibition</option>
+                <option value="other">Other</option>
+              </select>
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message"></textarea>
+              <p class="field-error"></p>
+            </div>
+
+            <button class="btn" type="submit">Send message</button>
+          </form>
+
+          <aside class="contact-aside">
+            <h3>Studio</h3>
+            <p>
+              Jinjiang District<br/>
+              Chengdu, Sichuan, China
+            </p>
+            <h3 style="margin-top:22px">Direct</h3>
+            <ul>
+              <li>studio@quietframes.example</li>
+              <li>+86 028 0000 0000</li>
+            </ul>
+            <h3 style="margin-top:22px">Hours</h3>
+            <p>Tuesday – Saturday, 10:00 – 18:00 CST<br/>Sittings by appointment.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© 2026 Lin Yao · Quiet Frames</span>
+      <span><a href="/console.html">Publish console</a></span>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/contact.js"></script>
+</body>
+</html>
